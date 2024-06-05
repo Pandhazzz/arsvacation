@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Detail Wisata - Gowa Discovery Park</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/iconweb.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <style>
+      .carousel-inner img {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Gowa Vacation</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="hubungikami.html">Hubungi Kami</a></li>
+            <li class="nav-item"><a class="nav-link" href="#!">Pemesanan</a></li>
+            <li class="nav-item"><a class="nav-link" href="#!">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Page header with logo and tagline-->
+    <header>
+      <div class="container">
+        <div class="text-center my-5">
+          <h1 class="fw-bolder">Gowa Discovery Park</Param></h1>
+          <p class="lead">Benteng Somba Opu, Kec. Barombong, Kabupaten Gowa, Sulawesi Selatan..</p>
+        </div>
+      </div>
+    </header>
+    <!-- Page content-->
+    <div class="container py-5">
+      <div class="row">
+        <!-- Left side: Carousel and description -->
+        <div class="col-lg-8">
+          <!-- Carousel -->
+          <div id="carouselExampleIndicators" class="carousel slide mb-4" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/GowaDiscoveryPark/gambar1.jpg" class="d-block w-100" alt="GowaDiscoveryPark 1" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/GowaDiscoveryPark/gambar2.jpg" class="d-block w-100" alt="GowaDiscoveryPark 2" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/GowaDiscoveryPark/gambar3.jpg" class="d-block w-100" alt="GowaDiscoveryPark 3" />
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- Description -->
+          <div class="card mb-4">
+            <div class="card-body">
+              <h2 class="card-title">Tentang Gowa Discovery Park</h2>
+              <p class="card-text">
+                Gowa Discovery Park adalah salah satu destinasi pilihan terbaik untuk menikmati hari 
+                liburan bersama keluarga. Di tempat ini, kamu bisa melihat begitu banyak tempat favorit 
+                yang unik dan menarik. Hal ini karena Gowa Discover Park merupakan perpaduan dari wisata
+                air, dan taman burung yang cantik dan mengasyikkan.
+                Lokasi Gowa Discovery Park ini berada di Jalan Tumunarunung, tepatnya pada Benteng Somba Opu. 
+                GDP sesungguhnya adalah taman burung, namun dikemas dengan sistem modern untuk menarik 
+                para wisatawan. Dengan menambahkan wisata air, maka pengunjung pun dapat berinteraksi 
+                dengan berbagai jenis burung dan bermain air setelahnya.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Right side: Booking form -->
+        <div class="col-lg-4">
+          <div class="card mb-4">
+            <div class="card-header">Form Pemesanan Paket Wisata</div>
+            <div class="card-body">
+              <form id="bookingForm">
+                <div class="mb-3">
+                  <label class="form-label" for="name">Nama Pemesan</label>
+                  <input class="form-control" id="name" type="text" required />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" for="phone">Nomor Telepon</label>
+                  <input class="form-control" id="phone" type="tel" required />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" for="duration">Durasi Penginapan (hari)</label>
+                  <input class="form-control" id="duration" type="number" min="1" required />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" for="participants">Jumlah Peserta</label>
+                  <input class="form-control" id="participants" type="number" min="1" required />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" for="services">Pelayanan Paket Perjalanan</label><br />
+                  <input type="checkbox" id="lodging" value="1000000" /> Penginapan (Rp. 1.000.000/hari) <br />
+                  <input type="checkbox" id="transport" value="1200000" /> Transportasi (Rp. 1.200.000/hari) <br />
+                  <input type="checkbox" id="meals" value="500000" /> Makanan (Rp. 500.000/hari)
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" for="total">Total Harga</label>
+                  <input class="form-control" id="total" type="text" readonly />
+                </div>
+                <div class="d-grid">
+                  <button class="btn btn-primary btn-lg" type="button" onclick="calculateTotal()">Hitung Harga</button>
+                </div>
+                <div class="d-grid mt-3">
+                  <button class="btn btn-success btn-lg" type="button" onclick="confirmBooking()">Simpan Pesanan</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer-->
+    <footer>
+      <div class="container"><p class="text-center text-dark mb-5">Copyright &copy; Arsyanda 2024</p></div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <script>
+      function calculateTotal() {
+        const duration = parseInt(document.getElementById("duration").value);
+        const lodging = document.getElementById("lodging").checked ? parseInt(document.getElementById("lodging").value) : 0;
+        const transport = document.getElementById("transport").checked ? parseInt(document.getElementById("transport").value) : 0;
+        const meals = document.getElementById("meals").checked ? parseInt(document.getElementById("meals").value) : 0;
+        const total = duration * (lodging + transport + meals);
+        document.getElementById("total").value = "Rp. " + total.toLocaleString();
+      }
+
+      function confirmBooking() {
+        const name = document.getElementById("name").value;
+        const phone = document.getElementById("phone").value;
+        const duration = document.getElementById("duration").value;
+        const participants = document.getElementById("participants").value;
+        const total = document.getElementById("total").value;
+
+        if (name && phone && duration && participants && total) {
+          alert(`Konfirmasi Pesanan:\nNama: ${name}\nTelepon: ${phone}\nDurasi: ${duration} hari\nJumlah Peserta: ${participants}\nTotal Harga: ${total}`);
+        } else {
+          alert("Harap lengkapi semua bidang formulir.");
+        }
+      }
+    </script>
+  </body>
+</html>
